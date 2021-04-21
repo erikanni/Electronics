@@ -48,6 +48,7 @@ public class Electronics
   }
 
   public static void main(String[] args) {
+    //data gathered from https://en.wikipedia.org/wiki/Timeline_of_electrical_and_electronic_engineering#1921%E2%80%931930
       ArrayList<Electronics> events = new ArrayList<Electronics>();
         events.add(new Electronics("Oscillograph", 1937, "Van Ardenne, Dowling, and Bullen"));
         events.add(new Electronics("Solar battery", 1954, "Chapin, Fuller, and Pearson"));
