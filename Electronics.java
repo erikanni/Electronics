@@ -2,16 +2,18 @@ import java.util.ArrayList;
 
 public class Electronics
 {
+  //instance variables
   private String event;
   private int year;
   private String inventor;
   
   public Electronics(String Event, int Year, String Inventor){
+    //constructor
     event = Event;
     year = Year;
     inventor = Inventor;
   }
-  
+  //accessor methods
   public String getEvent(){
     return event;
   }
@@ -23,6 +25,7 @@ public class Electronics
   }
   public static ArrayList<Electronics> getEvents (ArrayList<Electronics> el, int startYear, int endYear)
     {
+    //only adds to index if nothing is removed
         int index = 0;
            while (index < el.size())
            {
@@ -38,11 +41,13 @@ public class Electronics
     }
     public static void printEvents (ArrayList<Electronics> el)
     {
+      //iterates through the entire ArrayList specified and prints each object using the toString method
         for(Electronics item:el) {
             System.out.println(item);
         }
     
     }
+    //toString method
     public String toString(){
     return year + ": " + event + ", Invented by: " + inventor;
   }
